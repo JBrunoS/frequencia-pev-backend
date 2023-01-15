@@ -30,7 +30,7 @@ module.exports = {
   },
 
   production: {
-    client: 'pg',
+    client: 'postgresql',
     connection: {
       host : process.env.HOST,
       port : process.env.PORT_DATABASE,
