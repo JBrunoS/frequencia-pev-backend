@@ -31,7 +31,14 @@ module.exports = {
 
   production: {
     client: 'pg',
-    connection: process.env.HOST,
+    connection: {
+      host : 'postgres-ag-br1-3.conteige.cloud',
+      port : '54190',
+      user : 'udjzhj_pev1',
+      password : '123456',
+      database : 'udjzhj_pev'
+
+    },
     ssl: {
       rejectUnauthorized: false
     },
