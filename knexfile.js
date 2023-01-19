@@ -6,8 +6,15 @@
 module.exports = {
 
   development: {
-    client: 'pg',
-    connection: 'postgres://postgres:123456@localhost/frequencia',
+    client: 'mysql',
+    connection: {
+      host: 'mysql.api-frequencia.kinghost.net',
+      port: 3306,
+      user: 'apifrequencia',
+      password: 'Pev12345',
+      database: 'apifrequencia'
+
+    },
     migrations: {
       directory: './src/database/migrations'
     }
@@ -17,7 +24,7 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user:     'username',
+      user: 'username',
       password: 'password'
     },
     pool: {
@@ -32,11 +39,11 @@ module.exports = {
   production: {
     client: 'mysql',
     connection: {
-      host : 'mysql.api-frequencia.kinghost.net',
-      port : 3306,
-      user : 'apifrequencia',
-      password : 'Pev12345',
-      database : 'apifrequencia'
+      host: 'mysql.api-frequencia.kinghost.net',
+      port: 3306,
+      user: 'apifrequencia',
+      password: 'Pev12345',
+      database: 'apifrequencia'
 
     },
     ssl: {
