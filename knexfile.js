@@ -30,13 +30,13 @@ module.exports = {
   },
 
   production: {
-    client: 'pg',
+    client: 'mysql',
     connection: {
-      host : 'postgres-ag-br1-3.conteige.cloud',
-      port : '54190',
-      user : 'udjzhj_pev1',
-      password : '123456',
-      database : 'udjzhj_pev'
+      host : 'mysql.api-frequencia.kinghost.net',
+      port : 3306,
+      user : 'apifrequencia',
+      password : 'Pev12345',
+      database : 'apifrequencia'
 
     },
     ssl: {
