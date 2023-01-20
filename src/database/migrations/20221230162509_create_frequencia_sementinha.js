@@ -4,7 +4,7 @@
  */
 exports.up = function(knex) {
     return knex.schema.createTable('frequencia', function(table){
-        table.increments().primary()
+        table.increments('id').primary()
         table.integer('id_participante')
         table.integer('id_projeto')
         table.integer('id_professor')

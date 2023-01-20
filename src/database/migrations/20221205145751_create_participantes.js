@@ -4,7 +4,7 @@
  */
  exports.up = function(knex) {
     return knex.schema.createTable('participantes', function(table){
-      table.increments().primary()
+      table.increments('id').primary()
       table.string('br')
       table.string('nome')
       table.string('dia_nascimento')
