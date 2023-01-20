@@ -9,7 +9,6 @@ module.exports = {
     client: 'mysql',
     connection: {
       host: 'mysql.api-frequencia.kinghost.net',
-      port: 3306,
       user: 'apifrequencia',
       password: 'Pev12345',
       database: 'apifrequencia'
@@ -40,7 +39,6 @@ module.exports = {
     client: 'mysql',
     connection: {
       host: 'mysql.api-frequencia.kinghost.net',
-      port: 3306,
       user: 'apifrequencia',
       password: 'Pev12345',
       database: 'apifrequencia'

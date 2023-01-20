@@ -4,13 +4,13 @@
  */
 exports.up = function(knex) {
     return knex.schema.createTable('turmas', function(table){
-        table.integer('id').primary()
+        table.increments('id').primary().index()
         table.string('nome')
         table.string('descricao')
-        table.integer('id_professor')
-        table.integer('id_coordenador')
-        table.integer('id_participante')
-        table.integer('id_projeto')
+        table.integer('id_professor').unsigned()
+        table.integer('id_coordenador').unsigned()
+        table.integer('id_participante').unsigned()
+        table.integer('id_projeto').unsigned()
         table.string('turno')
 
         table.foreign('id_projeto').references('id').inTable('projetos')

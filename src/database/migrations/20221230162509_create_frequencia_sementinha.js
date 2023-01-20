@@ -4,10 +4,10 @@
  */
 exports.up = function(knex) {
     return knex.schema.createTable('frequencia', function(table){
-        table.integer('id').primary()
-        table.integer('id_participante')
-        table.integer('id_projeto')
-        table.integer('id_professor')
+        table.increments('id').primary().index()
+        table.integer('id_participante').unsigned()
+        table.integer('id_projeto').unsigned()
+        table.integer('id_professor').unsigned()
         table.string('nome_turma')
         table.string('turno_turma')
         table.string('mes')
