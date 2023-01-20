@@ -4,7 +4,7 @@
  */
 exports.up = function(knex) {
     return knex.schema.createTable('turmas', function(table){
-        table.increments('id').primary()
+        table.integer('id').primary()
         table.string('nome')
         table.string('descricao')
         table.integer('id_professor')
